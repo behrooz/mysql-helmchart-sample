@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Release.Name}}-phpmyadmin
+spec:
+  {{- range .Values.phpmyadmin.service}}
+  type: "{{.type}}"
+  {{end}}
+  ports:
+  {{- range .Values.phpmyadmin.service}}
+    - protocol: "{{.protocol}}"
+      port: {{.port}}
+      nodePort: {{.nodePort}}
+      targetPort: {{.targetPort}}
+  {{end}}    
+  selector:
+    app: phpmyadmin
