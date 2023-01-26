@@ -1,2 +1,2 @@
-# mysql-helmchart-sample
-mysql kubernetes manifest with helm chart
+# Mysql and phpmyadmin
+Simple mysql and phpmyadmin Helm chart
