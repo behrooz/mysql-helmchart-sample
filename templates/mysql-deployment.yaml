@@ -40,9 +40,9 @@ apiVersion: v1
 kind: persistentVolume
 metadata:
   name: mysql-pv
+  namespace: default   
   labels:
-    type: local
-    namespace: default    
+    type: local 
 spec:
   storageClassName: manual
   capacity:
@@ -57,7 +57,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
-  namespace: default  
+  namespace: default   
 spec:
   storageClassName: manual
   accessModes:
