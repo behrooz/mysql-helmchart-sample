@@ -37,7 +37,7 @@ spec:
 
 ---
 apiVersion: v1
-kind: persistentVolume
+kind: PersistentVolume
 metadata:
   name: mysql-pv
   namespace: default   
