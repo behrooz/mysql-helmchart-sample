@@ -24,7 +24,7 @@ phpmyadmin:
   image: 
     - repository: phpmyadmin  
       tag: "5.2.0"
-      PMA_HOST: "mysql-service:30006"
+      PMA_HOST: "192.168.2.138:30006"
       PMA_USER: "root"
       PMA_PASSWORD: "password"
       containerPort: 80
